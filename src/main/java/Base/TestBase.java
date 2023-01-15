@@ -17,6 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	   // driver.get(ReadData.readPrpertyFile("url"));
 	   driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	   driver.manage().addCookie(null);
 	}
 
 }
